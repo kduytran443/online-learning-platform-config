@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: "user-service"
+  config:
+    import:
+      - "common.yml"
+
+build:
+  version: "1.0"
+
+user:
+  message: "Welcome to user microservice related production APIs"
+  contactDetails:
+    name: "Tran Khanh Duy - Developer"
+    email: "trankhanhduy18@gmail.com"
+  onCallSupport:
+    - 0xxxxxxxxx

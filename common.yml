@@ -1,0 +1,8 @@
+
+user:
+  message: "Welcome to user microservice related local APIs (OVERRIDE)"
+  contactDetails:
+    name: "Tran Khanh Duy - Developer"
+    email: "trankhanhduy18@gmail.com"
+  onCallSupport:
+    - 0xxxxxxxxx
