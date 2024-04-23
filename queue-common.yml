@@ -9,10 +9,10 @@ queue-list:
   exchange: default.exchange
   user-registered:
     queue: user.registered
-    routing-key: user.registered.routingkey
+    routing-key: user.registered.key
   user-verified:
     queue: user.verified
-    routing-key: user.verified.routingkey
+    routing-key: user.verified.key
   verification-mail-sent:
     queue: verification.mail.sent
-    routing-key: verification.mail.sent.routingkey
+    routing-key: verification.mail.sent.key
