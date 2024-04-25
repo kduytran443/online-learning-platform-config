@@ -8,6 +8,9 @@ spring:
 build:
   version: "1.0"
 
+verification:
+  expired-time: 600
+
 user:
   message: "Welcome to user microservice related production APIs"
   contactDetails:
