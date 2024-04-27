@@ -11,6 +11,12 @@ build:
 verification:
   expired-time: 300
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
+
 user:
   message: "Welcome to user microservice related local APIs"
   contactDetails:
