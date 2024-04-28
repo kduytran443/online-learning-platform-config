@@ -1,9 +1,11 @@
 spring:
   application:
     name: "notification"
-  config:
-    import:
-      - "queue-common.yml"
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 build:
   version: "1.0"
@@ -22,6 +24,18 @@ management:
     health:
       probes:
         enabled: true
+
+queue-list:
+  exchange: default.exchange
+  user-registered:
+    queue: user.registered
+    routing-key: user.registered.key
+  user-verified:
+    queue: user.verified
+    routing-key: user.verified.key
+  verification-mail-sent:
+    queue: verification.mail.sent
+    routing-key: verification.mail.sent.key
 
 user:
   message: "Welcome to notification microservice related local APIs"
