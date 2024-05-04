@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: "category"
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+build:
+  version: "1.0"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+user:
+  message: "Welcome to category microservice related local APIs"
+  contactDetails:
+    name: "Tran Khanh Duy - Developer"
+    email: "trankhanhduy18@gmail.com"
+  onCallSupport:
+    - 0xxxxxxxxx
+
+category:
+  max-parent-count: 4
