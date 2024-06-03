@@ -21,9 +21,10 @@ build:
   version: "1.0"
 
 service:
-  message: "Welcome to class microservice related local APIs"
-  contactDetails:
-    name: "Tran Khanh Duy - Developer"
-    email: "trankhanhduy18@gmail.com"
-  onCallSupport:
-    - 0xxxxxxxxx
+  contactInfo:
+    message: "Welcome to class microservice related local APIs"
+    contactDetails:
+      name: "Tran Khanh Duy - Developer"
+      email: "trankhanhduy18@gmail.com"
+    onCallSupport:
+      - 0xxxxxxxxx

@@ -28,9 +28,10 @@ management:
 
 service:
   max-parent-count: "4"
-  message: "Welcome to category microservice related local APIs"
-  contactDetails:
-    name: "Tran Khanh Duy - Developer"
-    email: "trankhanhduy18@gmail.com"
-  onCallSupport:
-    - 0xxxxxxxxx
+  contactInfo:
+    message: "Welcome to category microservice related local APIs"
+    contactDetails:
+      name: "Tran Khanh Duy - Developer"
+      email: "trankhanhduy18@gmail.com"
+    onCallSupport:
+      - 0xxxxxxxxx
