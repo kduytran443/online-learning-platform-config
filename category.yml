@@ -1,11 +1,12 @@
 spring:
   application:
     name: "category"
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:
+            - http://localhost:29092
 
 build:
   version: "1.0"
@@ -25,13 +26,11 @@ management:
       probes:
         enabled: true
 
-user:
+category:
+  max-parent-count: "4"
   message: "Welcome to category microservice related local APIs"
   contactDetails:
     name: "Tran Khanh Duy - Developer"
     email: "trankhanhduy18@gmail.com"
   onCallSupport:
     - 0xxxxxxxxx
-
-category:
-  max-parent-count: "4"

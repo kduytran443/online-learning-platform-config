@@ -1,14 +1,12 @@
 spring:
   application:
     name: "class"
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-
-build:
-  version: "1.0"
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:
+            - http://localhost:29092
 
 management:
   endpoints:
@@ -24,3 +22,14 @@ management:
     health:
       probes:
         enabled: true
+
+build:
+  version: "1.0"
+
+class:
+  message: "Welcome to class microservice related local APIs"
+  contactDetails:
+    name: "Tran Khanh Duy - Developer"
+    email: "trankhanhduy18@gmail.com"
+  onCallSupport:
+    - 0xxxxxxxxx
