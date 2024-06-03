@@ -26,7 +26,7 @@ management:
       probes:
         enabled: true
 
-category:
+service:
   max-parent-count: "4"
   message: "Welcome to category microservice related local APIs"
   contactDetails:

@@ -1,12 +1,6 @@
 spring:
   application:
     name: "class"
-  cloud:
-    stream:
-      kafka:
-        binder:
-          brokers:
-            - http://localhost:29092
 
 management:
   endpoints:
@@ -26,7 +20,7 @@ management:
 build:
   version: "1.0"
 
-class:
+service:
   message: "Welcome to class microservice related local APIs"
   contactDetails:
     name: "Tran Khanh Duy - Developer"
