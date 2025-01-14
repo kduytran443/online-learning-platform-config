@@ -1,2 +1,4 @@
 front-end:
   url: "http://localhost:5173"
+  payment-success-path: "/payment/%s/make"
+  payment-cancel-path: "/payment/%s/cancel"
